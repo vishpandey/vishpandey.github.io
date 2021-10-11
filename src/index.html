@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Vishal Pandey </title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href=’https://fonts.googleapis.com/css?family=Open+Sans’ rel=’stylesheet’/>
+	<link href=’https://fonts.googleapis.com/css?family=Sofia’ rel=’stylesheet’/>
+</head>
+<body>
+	<nav class = "navbar-container" id = "navbar-container">
+		<ul class = "navbar" id = "navbar">
+			<li class = "home  navbar-item"><a href="#home-row"> HOME </a> </li>
+			<li class = "education navbar-item"><a href="#education-section"> EDUCATION </a> </li>
+			<li class="work-experience  navbar-item"><a href="#work-experience-section"> WORK EXPERIENCE </a></li>
+			<li class="skills  navbar-item"><a href="#skills-section"> SKILLS </a></li>
+			<li class="cv  navbar-item" onclick="loadCV()"> CV </li>
+		</ul>
+	</nav>
+	<div class = "main-content" id = "main-content">
+		
+		<!-- ------------------------HOME SECTION BEGIN------------------------------------- -->
+		<div id = "home-row" class = "home-row">
+			<div class = "column dp-container">
+				<div class = "dp-image-container">
+					<img class = "dp-image" src="../utils/dp.jpg"/>
+				</div>
+				<div class = "dp-name-container">	
+					<span class = "dp-name"> <h2> Vishal Pandey </h2></span>
+				</div>
+				<div class = "social-media-links">
+					<img src="../utils/linkedin.svg" alt="*"></img>
+					<img src="../utils/github.svg" alt="*"></img>
+				</div>
+			</div>
+			<div class=" column about-me-container">
+				<p class = "about-me">
+				<p class = "hi-div"> <h3> Hi, </h3> </p>
+					I am a Forward-thinking Software Engineer with background working
+					effectively in dynamic environments. Fluent in multiple programming
+					languages, experience with Distributed Systems.  </p>
+				<p> Proud team player, focused on achieving project objectives with speed and accuracy. </p>
+
+				<p> I am a first year student of Mtech CSE in IIIT Hyderabad.</p>
+			</div>
+		</div>
+		<!-- ------------------------HOME SECTION END------------------------------------- -->
+
+		<!-- ------------------------EDUCATION SECTION BEGIN------------------------------------- -->
+		
+		<div class = "education-section" id = "education-section" >
+			<div class = "section-heading-container">
+				EDUCATION
+			</div>
+			<table class = "education-table" id = "education-table">
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td class = "education-card-container"> 
+						<div class = "education-card education-card-1"> 
+							<h4 class = "level"> M.TECH CSE </h4>
+							<div class = "institute-image-container">
+								<p class = "institute"> INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY, HYDERABAD </p>
+								<img class="institute-image" src="../utils/iiit-icon.jpeg"></img> 
+							</div>
+							<p class = "year"> 2021-23 </p>
+							<p class = "score"> SCORE - </p>
+						</div>
+					</td>
+					<td class = "education-card-container"> 
+						<div class = "education-card education-card-2"> 
+							<h4 class = "level"> B.TECH CSE </h4>
+							<div class = "institute-image-container">
+								<p class = "institute"> JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY, NOIDA </p>
+								<img class="institute-image" src="../utils/jiit-icon.jpeg"></img> 
+							</div>
+							<p class = "year"> 2013-17 </p>
+							<p class = "score">CGPA - 6.3/10 </p>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td class = "education-card-container"> 
+						<div class = "education-card education-card-3">
+							<h4 class = "level"> HIGH SCHOOL </h4>
+							<div class = "institute-image-container">
+								<p class = "institute"> LUCKNOW PUBLIC SCHOOL, LUCKNOW </p>
+								<img class="institute-image" src="../utils/lps-icon-1.jpeg"></img> 
+							</div>
+							<p class = "year"> 2010 </p>
+							<p class = "score">CGPA - 9/10</p>
+						</div>
+					</td>
+					<td class = "education-card-container"> 
+						<div class = "education-card education-card-4"> 
+							<h4 class = "level"> SENIOR SECONDARY </h4>
+							<div class = "institute-image-container">
+								<p class = "institute"> LUCKNOW PUBLIC SCHOOL, LUCKNOW </p>
+								<img class="institute-image" src="../utils/lps-icon-1.jpeg"></img> 
+							</div>
+							<p class = "year"> 2012 </p>
+							<p class = "score">SCORE - 90.2 % </p>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+
+		<!-- ------------------------EDUCATION SECTION END------------------------------------- -->
+
+		<!-- ------------------------WORK EXPERIENCE SECTION BEGIN------------------------------------- -->
+		<div class = "work-experience-section" id = "work-experience-section">
+			<div class = "section-heading-container">
+				WORK EXPERIENCE
+			</div>
+			<table class = "work-experience-table">
+				<tr class = "we-row">
+					<td class = "we-row-data">
+						<div class = "we-container">
+							<div class = "we-company-logo">
+								<img src="../utils/hae.jpeg"></img>
+							</div>
+							<div class = "we-detail">
+								<h3 class = "we-position"> FREELANCE FULL STACK DEVELOPER </h3>
+								<p class = "we-company-name"> HAPPILYEVER </p>
+								<p class = "we-duration"> JUNE 2020 - AUGUST 2020 </p>
+								<h4 class = "we-location"> REMOTE </h4>
+								<h4 class = "we-desc-link" onclick="loadWeDesc('we-desc-1')"> Details </h4> 
+								<div class = "we-desc" id = "we-desc-1">
+									<ul class = "we-desc-list">
+										<li class = "we-desc-list-item">
+											Part of a two person engineering team in a dynamic, fast paced startup that built <a href="https://www.happilyever.co">Happilyever.com</a> from scratch in 2 months.
+										</li>
+										<li class = "we-desc-list-item">
+											<b> <u> Responsibilities include </u> - </b> System Design, Api Design & Development, Database Design, DevOps, Frontend
+										</li>
+										<li class = "we-desc-list-item">
+											Learnt AWS and ReactJs on the fly
+										</li>
+										<li class = "we-desc-list-item">
+											Built multiple code pipelines for automated code deployments and automated tests
+										</li>
+										<li class = "we-desc-list-item">
+											Built responsive frontend in Reactjs
+										</li>
+										<li class = "we-desc-list-item">
+											Built custom testing framework from scratch
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class = "we-row">
+					<td class = "we-row-data">
+						<div class = "we-container">
+							<div class = "we-company-logo">
+								<img src="../utils/skillate.png"></img>
+							</div>
+							<div class = "we-detail">
+								<h3 class = "we-position"> BACKEND DEVELOPER </h3>
+								<p class = "we-company-name"> SKILLATE LABORATORIES </p>
+								<p class = "we-duration"> JAN 2020 - MAY 2020 </p>
+								<h4 class = "we-location"> BENGALURU, INDIA </h4>
+								<h4 class = "we-desc-link" onclick="loadWeDesc('we-desc-2')"> Details </h4> 
+								<div class = "we-desc" id = "we-desc-2">
+									<ul class = "we-desc-list">
+										<li class = "we-desc-list-item">
+											Planned and engineered RESTful web services to manipulate dynamic datasets for <a href="https://www.skillate.com">Skillate</a>
+										</li>
+										<li class = "we-desc-list-item">
+											<b> <u> Responsibilities include </u> - </b> System Design, Api Design & Development in Java, Database Design & Implementation in in Mysql,
+										</li>
+										<li class = "we-desc-list-item">
+											Represented web team at meetings with executives and discussed project goals and milestones.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class = "we-row">
+					<td class = "we-row-data">
+						<div class = "we-container">
+							<div class = "we-company-logo">
+								<img src="../utils/redhat.png"></img>
+							</div>
+							<div class = "we-detail">
+								<h3 class = "we-position"> ASSOCIATE SOFTWARE ENGINEER</h3>
+								<p class = "we-company-name"> REDHAT </p>
+								<p class = "we-duration"> JUNE 2018 - DECEMBER 2019</p>
+								<h4 class = "we-location"> BENGALURU, INDIA </h4>
+								<h4 class = "we-desc-link" onclick="loadWeDesc('we-desc-3')"> Details </h4>
+								<div class = "we-desc" id = "we-desc-3">
+									<ul class = "we-desc-list">
+										<li class = "we-desc-list-item">
+											Wrote highly maintainable, solid code for <a href="https://github.com/gluster/glusterd2">Glusterd2</a>, forming core framework and earning consistent praise from subsequent developers
+											since initial version.
+										</li>
+										<li class = "we-desc-list-item">
+											Modified existing Legacy code of Glusterfs to fix pre-existing bugs, introduce new features and improve overall performance.
+										</li>
+										<li class = "we-desc-list-item">
+											Conducted regression testing, performance tests analyzed results and submitted observations to the leadership.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class = "we-row">
+					<td class = "we-row-data">
+						<div class = "we-container">
+							<div class = "we-company-logo">
+								<img src="../utils/redhat.png"></img>
+							</div>
+							<div class = "we-detail">
+								<h3 class = "we-position"> SOFTWARE ENGINEERING INTERN </h3>
+								<p class = "we-company-name"> REDHAT </p>
+								<p class = "we-duration"> SEPTEMBER 2017 - JUNE 2018 </p>
+								<h4 class = "we-location"> BENGALURU, INDIA </h4>
+								<h4 class = "we-desc-link" onclick="loadWeDesc('we-desc-4')"> Details </h4>
+								<div class = "we-desc" id = "we-desc-4">
+									<ul class = "we-desc-list">
+										<li class = "we-desc-list-item">
+											Improved Glusterfs performance by correcting errors and upgrading interfaces to current specifications.
+										</li>
+										<li class = "we-desc-list-item">
+											Trained with Senior Engineers in specifications, design, coding, testing and maintenance.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class = "we-row">
+					<td class = "we-row-data">
+						<div class = "we-container">
+							<div class = "we-company-logo">
+								<img src="../utils/gsoc.png"></img>
+							</div>
+							<div class = "we-detail">
+								<h3 class = "we-position"> CONTRACT DEVELOPER </h3>
+								<p class = "we-company-name"> GOOGLE SUMMER OF CODE </p>
+								<p class = "we-duration"> 2017 </p>
+								<h4 class = "we-location"> REMOTE </h4>
+								<h4 class = "we-desc-link" onclick="loadWeDesc('we-desc-5')"> Details </h4>
+								<div class = "we-desc" id = "we-desc-5">
+									<ul class = "we-desc-list">
+										<li class = "we-desc-list-item">
+											Mention users in everyday posts (@ user tagging).
+										</li>
+										<li class = "we-desc-list-item">
+											Managing Notifications. Modify Database to record user tagging activities for future analysis.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class = "we-row">
+					<td class = "we-row-data">
+						<div class = "we-container">
+							<div class = "we-company-logo">
+								<img src="../utils/wms.jpeg"></img>
+							</div>
+							<div class = "we-detail">
+								<h3 class = "we-position"> BACKEND DEVELOPER INTERN </h3>
+								<p class = "we-company-name"> WEMAKESCHOLARS </p>
+								<p class = "we-duration"> 2016 </p>
+								<h4 class = "we-location"> HYDERABAD, INDIA </h4>
+								<h4 class = "we-desc-link" onclick="loadWeDesc('we-desc-6')"> Details </h4>
+								<div class = "we-desc" id = "we-desc-6">
+									<ul class = "we-desc-list">
+										<li class = "we-desc-list-item">
+											Built a Q-A platform and a search engine using Elastic Search.
+										</li>
+										<li class = "we-desc-list-item">
+											Real Time Notification service using NodeJs-Socket.io
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr class = "we-row">
+					<td class = "we-row-data">
+						<div class = "we-container">
+							<div class = "we-company-logo">
+								<img src="../utils/wingify.jpeg"></img>
+							</div>
+							<div class = "we-detail">
+								<h3 class = "we-position"> BACKEND DEVELOPER INTERN </h3>
+								<p class = "we-company-name"> WINGIFY SOFTWARE PVT. LTD. </p>
+								<p class = "we-duration"> JULY 2017 - SEPTEMBER 2017 </p>
+								<h4 class = "we-location"> NEW DELHI, INDIA </h4>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- ------------------------WORK EXPERIENCE SECTION END------------------------------------- -->
+
+		<!-- ------------------------SKILLS SECTION BEGIN------------------------------------- -->
+		<div class = "skills-section" id = "skills-section">
+			<div class = "section-heading-container">
+				SKILLS
+			</div>
+			<table class = "skills-table">
+				<tr class = "skills-row">
+					<td class = "skills-row-data">
+						<div class = "skills-container">
+							<div class = "skills-category-container">	
+								<div class = "skills-category-image">
+									<img src="../utils/backend.jpeg"></img>
+								</div>
+								<div  class = "skills-category">
+									<p> BACKEND</p>
+								</div>
+								<div class="skills-desc-expand">
+									<img class="skill-desc-expand-icon" id = "skill-desc-expand-icon1" onclick="loadSkillsDesc('skill-desc-backend', 'skill-desc-expand-icon1')" src = "../utils/expand.png">
+									</img>
+								</div>
+							</div>
+							<div class = "skills-list-container" id = "skill-desc-backend">
+								<ul class = "skills-list"> 
+									<li class = "skills-list-item">
+										<div class = "skill-desc-list-item skills-desc-li-1">
+											<div class = "skill-name"><h4> C </h4>
+											</div>
+											<div class = "progress-bar-container">
+												<div class="progress1 progress-striped">
+													<div class=" progress-bar progress-bar1">
+													</div>                       
+												</div>
+											</div> 
+										</div>
+									</li>
+									<li class = "skills-list-item">
+										<div class = "skills-desc-list" id = "skill-desc-list">
+											<div class = "skill-desc-list-item">
+												<div class = "skill-name"><h4>GOLANG</h4>
+												</div> 
+												<div class = "progress-bar-container">   
+													<div class="progress2 progress-striped">
+														<div class="progress-bar progress-bar2">
+														</div>                       
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class = "skills-list-item">
+										<div class = "skills-desc-list" id = "skill-desc-list">
+											<div class = "skill-desc-list-item">
+												<div class = "skill-name"><h4>JAVA</h4>
+												</div>
+												<div class = "progress-bar-container">    
+													<div class="progress3 progress-striped">
+														<div class="progress-bar progress-bar3">
+														</div>                       
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class = "skills-list-item">
+										<div class = "skills-desc-list" id = "skill-desc-list">
+											<div class = "skill-desc-list-item">
+												<div class = "skill-name"><h4>PYTHON</h4>
+												</div> 
+												<div class = "progress-bar-container">   
+													<div class="progress4 progress-striped">
+														<div class="progress-bar progress-bar4">
+														</div>                       
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class = "skills-list-item">
+										<div class = "skills-desc-list" id = "skill-desc-list">
+											<div class = "skill-desc-list-item">
+												<div class = "skill-name"><h4>PHP</h4>
+												</div> 
+												<div class = "progress-bar-container">   
+													<div class="progress5 progress-striped">
+														<div class="progress-bar progress-bar5">
+														</div>                       
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr class = "skills-row">
+					<td class = "skills-row-data">
+						<div class = "skills-container">
+							<div class = "skills-category-container">	
+								<div class = "skills-category-image">
+									<img src="../utils/databases.png"></img>
+								</div>
+								<div  class = "skills-category">
+									<p> DATABASES</p>
+								</div>
+								<div class="skills-desc-expand">
+									<img class="skill-desc-expand-icon" id = "skill-desc-expand-icon2" onclick="loadSkillsDesc('skill-desc-databases', 'skill-desc-expand-icon2')" src = "../utils/expand.png">
+									</img>
+								</div>
+							</div>
+							<div class = "skills-list-container" id = "skill-desc-databases">
+								<ul class = "skills-list"> 
+									<li class = "skills-list-item">
+										<div class = "skill-desc-list-item skills-desc-li-1">
+											<div class = "skill-name"><h4> MYSQL </h4>
+											</div>
+											<div class = "progress-bar-container">
+												<div class="progress6 progress-striped">
+													<div class="progress-bar progress-bar6">
+													</div>                       
+												</div>
+											</div> 
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr class = "skills-row">
+					<td class = "skills-row-data">
+						<div class = "skills-container">
+							<div class = "skills-category-container">	
+								<div class = "skills-category-image">
+									<img src="../utils/frontend.png"></img>
+								</div>
+								<div  class = "skills-category">
+									<p> FRONTEND </p>
+								</div>
+								<div class="skills-desc-expand">
+									<img class="skill-desc-expand-icon" id = "skill-desc-expand-icon3" onclick="loadSkillsDesc('skill-desc-frontend', 'skill-desc-expand-icon3')" src = "../utils/expand.png">
+									</img>
+								</div>
+							</div>
+							<div class = "skills-list-container" id = "skill-desc-frontend">
+								<ul class = "skills-list"> 
+									<li class = "skills-list-item">
+										<div class = "skill-desc-list-item skills-desc-li-1">
+											<div class = "skill-name"><h4> REACTJS </h4>
+											</div>
+											<div class = "progress-bar-container">
+												<div class="progress7 progress-striped">
+													<div class="progress-bar7 progress-bar">
+													</div>                       
+												</div>
+											</div> 
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+				<tr class = "skills-row">
+					<td class = "skills-row-data">
+						<div class = "skills-container">
+							<div class = "skills-category-container">	
+								<div class = "skills-category-image">
+									<img src="../utils/devops.jpeg"></img>
+								</div>
+								<div  class = "skills-category">
+									<p> DEVOPS </p>
+								</div>
+								<div class="skills-desc-expand">
+									<img class="skill-desc-expand-icon" id = "skill-desc-expand-icon4" onclick="loadSkillsDesc('skill-desc-devOps', 'skill-desc-expand-icon4')" src = "../utils/expand.png">
+									</img>
+								</div>
+							</div>
+							<div class = "skills-list-container" id = "skill-desc-devOps">
+								<ul class = "skills-list"> 
+									<li class = "skills-list-item">
+										<div class = "skill-desc-list-item skills-desc-li-1">
+											<div class = "skill-name"><h4> AWS </h4>
+											</div>
+											<div class = "progress-bar-container">
+												<div class="progress8 progress-striped">
+													<div class="progress-bar8 progress-bar">
+													</div>                       
+												</div>
+											</div> 
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+		<!-- ------------------------SKILLS SECTION END------------------------------------- -->
+
+	</div>
+</body>
+
+<script type="text/javascript" src =  "../scripts/index.js"></script>
+<link rel="stylesheet" href="../styles/index.css">
+<link rel="stylesheet" href="../styles/home.css">
+<link rel="stylesheet" href="../styles/education.css">
+<link rel="stylesheet" href="../styles/work-experience.css">
+<link rel="stylesheet" href="../styles/skills.css">
+</html>

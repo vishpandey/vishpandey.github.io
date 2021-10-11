@@ -1,0 +1,331 @@
+.skills-section {
+  padding-bottom: 10%;
+}
+
+
+.skills-table {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10%;
+}
+
+.skills-row {
+  background-color: white;
+}
+
+.skills-row-data {
+  border-bottom: 0.1px solid lightgrey;
+}
+
+
+.skills-category-container {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.skills-category-image {
+  width: 30%;
+  align-items: center;
+  display: flex;
+}
+
+.skills-category {
+  width: 60%;
+  text-align: left;
+  font-family: ui-monospace;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: larger;
+  color: chocolate;
+}
+
+.skills-desc-expand {
+    width: 10%;
+    /* align-items: center; */
+    display: flex;
+}
+
+.skills-desc-collapse {
+    width: 10%;
+    /* align-items: center; */
+    display: flex;
+}
+
+.progress1 {
+    display: flex;
+    width: 85%;
+    margin-top: 25;
+    /* margin-top: 4%; */
+    align-items: center;
+}
+
+.progress2 {
+    display: flex;
+    width: 80%;
+    margin-top: 25;
+    /* margin-top: 4%; */
+    align-items: center;
+}
+
+.progress3 {
+    display: flex;
+    width: 65%;
+    margin-top: 25;
+    /* margin-top: 4%; */
+    align-items: center;
+}
+
+.progress4 {
+    display: flex;
+    width: 30%;
+    margin-top: 25;
+    /* margin-top: 4%; */
+    align-items: center;
+}
+
+.progress5 {
+    display: flex;
+    width: 50%;
+    margin-top: 25;
+    /* margin-top: 4%; */
+    align-items: center;
+}
+
+.progress6 {
+    display: flex;
+    width: 80%;
+    margin-top: 25;
+    /* margin-top: 4%; */
+    align-items: center;
+}
+
+.progress7 {
+    display: flex;
+    width: 60%;
+    margin-top: 25;
+    /* margin-top: 4%; */
+    align-items: center;
+}
+
+.progress8 {
+    display: flex;
+    width: 50%;
+    margin-top: 25;
+    /* margin-top: 4%; */
+    align-items: center;
+}
+
+.progress-bar {	
+  height: 18px;
+	background-color: #ee303c;  
+  border-radius: 4px; 
+  transition: 0.4s linear;  
+  transition-property: width, background-color;    
+}
+
+.progress-striped .progress-bar1 { 	
+  /*background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent);*/
+
+     background-color: #e09422e3;
+    width: 100%;
+    background-image: linear-gradient( 
+45deg
+ , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent); 
+  animation: progressAnimationStrike1 6s;
+}
+
+@keyframes progressAnimationStrike1 {
+     from { width: 0 }
+     to   { width: 85% }
+}
+
+.progress-striped .progress-bar2 {  
+  /*background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent);*/
+
+      background-color: #e09422e3;
+    width: 100%;
+    background-image: linear-gradient( 
+45deg
+ , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent); 
+  animation: progressAnimationStrike2 6s;
+}
+
+@keyframes progressAnimationStrike2 {
+     from { width: 0 }
+     to   { width: 85% }
+}
+
+.progress-striped .progress-bar3 {  
+  /*background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent); */
+
+      background-color: #e09422e3;
+    width: 100%;
+    background-image: linear-gradient( 
+45deg
+ , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike3 6s;
+}
+
+@keyframes progressAnimationStrike3 {
+     from { width: 0 }
+     to   { width: 70% }
+}
+
+.progress-striped .progress-bar4 {  
+  /*background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent); */
+
+      background-color: #e09422e3;
+    width: 100%;
+    background-image: linear-gradient( 
+45deg
+ , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike4 6s;
+}
+
+@keyframes progressAnimationStrike4 {
+     from { width: 0 }
+     to   { width: 30% }
+}
+
+
+.progress-striped .progress-bar5 {  
+  /*background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent); */
+
+      background-color: #e09422e3;
+    width: 100%;
+    background-image: linear-gradient( 
+45deg
+ , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike5 6s;
+}
+
+@keyframes progressAnimationStrike5 {
+     from { width: 0 }
+     to   { width: 50% }
+}
+
+.progress-striped .progress-bar6 {  
+  /*background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent); */
+
+      background-color: #e09422e3;
+    width: 100%;
+    background-image: linear-gradient( 
+45deg
+ , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike6 6s;
+}
+
+@keyframes progressAnimationStrike6 {
+     from { width: 0 }
+     to   { width: 80% }
+}
+
+.progress-striped .progress-bar7 {  
+  /*background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent);*/
+
+      background-color: #e09422e3;
+    width: 100%;
+    background-image: linear-gradient( 
+45deg
+ , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike7 6s;
+}
+
+@keyframes progressAnimationStrike7 {
+     from { width: 0 }
+     to   { width: 60% }
+}
+
+
+.progress-striped .progress-bar8 {  
+  /*background-color: #FCBC51; 
+  width: 100%; 
+  background-image: linear-gradient(
+        45deg, rgb(252,163,17) 25%, 
+        transparent 25%, transparent 50%, 
+        rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+        transparent 75%, transparent);*/
+      background-color: #e09422e3;
+    width: 100%;
+    background-image: linear-gradient( 
+45deg
+ , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike8 6s;
+}
+
+@keyframes progressAnimationStrike8 {
+     from { width: 0 }
+     to   { width: 50% }
+}
+
+
+
+.skill-desc-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.skill-name {
+  width: 15%;
+  color: #de8c12;
+  font-family: sans-serif;
+}
+
+.progress-bar-container {
+  width: 100%;
+  box-shadow: inset 0 1px 2px rgb(0 0 0 / 25%), 0 1px rgb(255 255 255 / 8%);
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.skills-list-container {
+  display: none;
+}
+
+.skills-list {
+  list-style-type:none;
+}
