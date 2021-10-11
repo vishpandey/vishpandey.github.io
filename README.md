@@ -1,8 +1,8 @@
 # SSD ASSIGNMENT 2
 ### Directory Structure
-- <RollNo>
+- vishpandey.github.io
     - src
-        - index.html 
+        - index.html
     - scripts
         - index.js
     - styles
