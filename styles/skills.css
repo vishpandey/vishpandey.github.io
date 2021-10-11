@@ -2,36 +2,71 @@
   padding-bottom: 10%;
 }
 
+.skills-section .section-heading-container {
+  text-align:left;
+  font-family: 'Open Sans', serif;
+  font-size: 200%;
+  background-color:rgb(14 30 43 / 70%);
+  width:40%;
+  line-height:60px;
+  color:white;
+  margin-left:17%;
+  position:relative;
+  transform: scale3d(1.5, 1.5, 1.5);
+  letter-spacing: 2;
+  z-index: 10;
+}
 
-.skills-table {
+.skills-section .section-heading-container:before{
+  content:"";
+  width:0px;
+  height:0px;
+  border-top:60px solid rgb(14 30 43 / 70%);
+  border-left:60px solid transparent;
+  position:absolute;
+  right:100%;
+  top:0px;
+  z-index: 10;
+}
+
+.skills-section .section-heading {
+  font-family: monospace;
+    font-size: xxx-large;
+    color: #667590;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+.skills-section .skills-table {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   padding-top: 10%;
 }
 
-.skills-row {
+.skills-section .skills-row {
   background-color: white;
 }
 
-.skills-row-data {
+.skills-section .skills-row-data {
   border-bottom: 0.1px solid lightgrey;
 }
 
 
-.skills-category-container {
+.skills-section .skills-category-container {
   display: flex;
   border: 1px solid grey;
   border-radius: 10px;
 }
 
-.skills-category-image {
+.skills-section .skills-category-image {
   width: 30%;
   align-items: center;
   display: flex;
 }
 
-.skills-category {
+.skills-section .skills-category {
   width: 60%;
   text-align: left;
   font-family: ui-monospace;
@@ -41,19 +76,19 @@
   color: chocolate;
 }
 
-.skills-desc-expand {
+.skills-section .skills-desc-expand {
     width: 10%;
     /* align-items: center; */
     display: flex;
 }
 
-.skills-desc-collapse {
+.skills-section .skills-desc-collapse {
     width: 10%;
     /* align-items: center; */
     display: flex;
 }
 
-.progress1 {
+.skills-section .progress1 {
     display: flex;
     width: 85%;
     margin-top: 25;
@@ -61,7 +96,7 @@
     align-items: center;
 }
 
-.progress2 {
+.skills-section .progress2 {
     display: flex;
     width: 80%;
     margin-top: 25;
@@ -69,7 +104,7 @@
     align-items: center;
 }
 
-.progress3 {
+.skills-section .progress3 {
     display: flex;
     width: 65%;
     margin-top: 25;
@@ -77,7 +112,7 @@
     align-items: center;
 }
 
-.progress4 {
+.skills-section .progress4 {
     display: flex;
     width: 30%;
     margin-top: 25;
@@ -85,7 +120,7 @@
     align-items: center;
 }
 
-.progress5 {
+.skills-section .progress5 {
     display: flex;
     width: 50%;
     margin-top: 25;
@@ -93,7 +128,7 @@
     align-items: center;
 }
 
-.progress6 {
+.skills-section .progress6 {
     display: flex;
     width: 80%;
     margin-top: 25;
@@ -101,7 +136,7 @@
     align-items: center;
 }
 
-.progress7 {
+.skills-section .progress7 {
     display: flex;
     width: 60%;
     margin-top: 25;
@@ -109,7 +144,7 @@
     align-items: center;
 }
 
-.progress8 {
+.skills-section .progress8 {
     display: flex;
     width: 50%;
     margin-top: 25;
@@ -117,7 +152,7 @@
     align-items: center;
 }
 
-.progress-bar {	
+.skills-section .progress-bar {	
   height: 18px;
 	background-color: #ee303c;  
   border-radius: 4px; 
@@ -125,7 +160,7 @@
   transition-property: width, background-color;    
 }
 
-.progress-striped .progress-bar1 { 	
+.skills-section .progress-striped .progress-bar1 { 	
   /*background-color: #FCBC51; 
   width: 100%; 
   background-image: linear-gradient(
@@ -147,7 +182,7 @@
      to   { width: 85% }
 }
 
-.progress-striped .progress-bar2 {  
+.skills-section .progress-striped .progress-bar2 {  
   /*background-color: #FCBC51; 
   width: 100%; 
   background-image: linear-gradient(
@@ -169,7 +204,7 @@
      to   { width: 85% }
 }
 
-.progress-striped .progress-bar3 {  
+ .skills-section .progress-striped .progress-bar3 {  
   /*background-color: #FCBC51; 
   width: 100%; 
   background-image: linear-gradient(
@@ -214,7 +249,7 @@
 }
 
 
-.progress-striped .progress-bar5 {  
+.skills-section .progress-striped .progress-bar5 {  
   /*background-color: #FCBC51; 
   width: 100%; 
   background-image: linear-gradient(
@@ -236,7 +271,7 @@
      to   { width: 50% }
 }
 
-.progress-striped .progress-bar6 {  
+.skills-section .progress-striped .progress-bar6 {  
   /*background-color: #FCBC51; 
   width: 100%; 
   background-image: linear-gradient(
@@ -258,7 +293,7 @@
      to   { width: 80% }
 }
 
-.progress-striped .progress-bar7 {  
+.skills-section .progress-striped .progress-bar7 {  
   /*background-color: #FCBC51; 
   width: 100%; 
   background-image: linear-gradient(
@@ -281,7 +316,7 @@
 }
 
 
-.progress-striped .progress-bar8 {  
+.skills-section .progress-striped .progress-bar8 {  
   /*background-color: #FCBC51; 
   width: 100%; 
   background-image: linear-gradient(
@@ -304,28 +339,403 @@
 
 
 
-.skill-desc-list-item {
+.skills-section .skill-desc-list-item {
   display: flex;
   align-items: center;
 }
 
-.skill-name {
+.skills-section .skill-name {
   width: 15%;
   color: #de8c12;
   font-family: sans-serif;
 }
 
-.progress-bar-container {
+.skills-section .progress-bar-container {
   width: 100%;
   box-shadow: inset 0 1px 2px rgb(0 0 0 / 25%), 0 1px rgb(255 255 255 / 8%);
   background: rgba(0, 0, 0, 0.25);
   border-radius: 6px;
 }
 
-.skills-list-container {
+.skills-section .skills-list-container {
   display: none;
 }
 
-.skills-list {
+.skills-section .skills-list {
   list-style-type:none;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .skills-section {
+      padding-bottom: 10%;
+      width: 100%;
+    }
+
+    .skills-section .section-heading-container {
+      text-align:left;
+      font-family: 'Open Sans', serif;
+      font-size: 100%;
+      background-color:rgb(14 30 43 / 70%);
+      width:40%;
+      line-height:30px;
+      color:white;
+      margin-left:17%;
+      position:relative;
+      transform: scale3d(1.5, 1.5, 1.5);
+      letter-spacing: 2;
+      z-index: 10;
+    }
+
+    .skills-section .section-heading-container:before{
+      content:"";
+      width:0px;
+      height:0px;
+      border-top:60px solid rgb(14 30 43 / 70%);
+      border-left:60px solid transparent;
+      position:absolute;
+      right:100%;
+      top:0px;
+      z-index: 10;
+    }
+
+    .skills-section .section-heading {
+      font-family: monospace;
+        font-size: xxx-large;
+        color: #667590;
+        text-align: center;
+        letter-spacing: 2px;
+        z-index: 10;
+    }
+
+    .skills-section .skills-table {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 10%;
+      padding-top: 20%;
+    }
+
+    .skills-section .skills-row {
+      background-color: white;
+      width: 100%;
+    }
+
+    .skills-row-data {
+    .skills-section   border-bottom: 0.1px solid lightgrey;
+    }
+
+
+    .skills-section .skills-category-container {
+      display: flex;
+      border: 1px solid grey;
+      border-radius: 10px;
+    }
+
+    .skills-section .skills-category-image {
+      width: 20%;
+      align-items: center;
+      display: flex;
+    }
+
+    .skills-section .skills-section .skills-category {
+      width: 60%;
+      text-align: left;
+      font-family: ui-monospace;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: larger;
+      color: chocolate;
+    }
+
+    .skills-section .skills-section .skills-desc-expand {
+        width: 10%;
+        /* align-items: center; */
+        display: flex;
+    }
+
+    .skills-section .skills-section .skills-desc-collapse {
+        width: 10%;
+        /* align-items: center; */
+        display: flex;
+    }
+
+    .skills-section .skills-section .progress1 {
+        display: flex;
+        width: 85%;
+        margin-top: 25;
+        /* margin-top: 4%; */
+        align-items: center;
+    }
+
+    .skills-section .skills-section .progress2 {
+        display: flex;
+        width: 80%;
+        margin-top: 25;
+        /* margin-top: 4%; */
+        align-items: center;
+    }
+
+    .skills-section .progress3 {
+        display: flex;
+        width: 65%;
+        margin-top: 25;
+        /* margin-top: 4%; */
+        align-items: center;
+    }
+
+    .skills-section .progress4 {
+        display: flex;
+        width: 30%;
+        margin-top: 25;
+        /* margin-top: 4%; */
+        align-items: center;
+    }
+
+    .skills-section .progress5 {
+        display: flex;
+        width: 50%;
+        margin-top: 25;
+        /* margin-top: 4%; */
+        align-items: center;
+    }
+
+    .skills-section .progress6 {
+        display: flex;
+        width: 80%;
+        margin-top: 25;
+        /* margin-top: 4%; */
+        align-items: center;
+    }
+
+   .skills-section  .progress7 {
+        display: flex;
+        width: 60%;
+        margin-top: 25;
+        /* margin-top: 4%; */
+        align-items: center;
+    }
+
+    .skills-section .progress8 {
+        display: flex;
+        width: 50%;
+        margin-top: 25;
+        /* margin-top: 4%; */
+        align-items: center;
+    }
+
+    .skills-section .progress-bar { 
+      height: 18px;
+      background-color: #ee303c;  
+      border-radius: 4px; 
+      transition: 0.4s linear;  
+      transition-property: width, background-color;    
+    }
+
+    .skills-section .progress-striped .progress-bar1 {  
+      /*background-color: #FCBC51; 
+      width: 100%; 
+      background-image: linear-gradient(
+            45deg, rgb(252,163,17) 25%, 
+            transparent 25%, transparent 50%, 
+            rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+            transparent 75%, transparent);*/
+
+         background-color: #e09422e3;
+        width: 100%;
+        background-image: linear-gradient( 
+    45deg
+     , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent); 
+      animation: progressAnimationStrike1 6s;
+    }
+
+    @keyframes progressAnimationStrike1 {
+         from { width: 0 }
+         to   { width: 85% }
+    }
+
+    .skills-section .skills-section .progress-striped .progress-bar2 {  
+      /*background-color: #FCBC51; 
+      width: 100%; 
+      background-image: linear-gradient(
+            45deg, rgb(252,163,17) 25%, 
+            transparent 25%, transparent 50%, 
+            rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+            transparent 75%, transparent);*/
+
+          background-color: #e09422e3;
+        width: 100%;
+        background-image: linear-gradient( 
+    45deg
+     , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent); 
+      animation: progressAnimationStrike2 6s;
+    }
+
+    @keyframes progressAnimationStrike2 {
+         from { width: 0 }
+         to   { width: 85% }
+    }
+
+    .skills-section .skills-section .progress-striped .progress-bar3 {  
+      /*background-color: #FCBC51; 
+      width: 100%; 
+      background-image: linear-gradient(
+            45deg, rgb(252,163,17) 25%, 
+            transparent 25%, transparent 50%, 
+            rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+            transparent 75%, transparent); */
+
+          background-color: #e09422e3;
+        width: 100%;
+        background-image: linear-gradient( 
+    45deg
+     , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+      animation: progressAnimationStrike3 6s;
+    }
+
+    @keyframes progressAnimationStrike3 {
+         from { width: 0 }
+         to   { width: 70% }
+    }
+
+    .skills-section .progress-striped .progress-bar4 {  
+      /*background-color: #FCBC51; 
+      width: 100%; 
+      background-image: linear-gradient(
+            45deg, rgb(252,163,17) 25%, 
+            transparent 25%, transparent 50%, 
+            rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+            transparent 75%, transparent); */
+
+          background-color: #e09422e3;
+        width: 100%;
+        background-image: linear-gradient( 
+    45deg
+     , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+      animation: progressAnimationStrike4 6s;
+    }
+
+    @keyframes progressAnimationStrike4 {
+         from { width: 0 }
+         to   { width: 30% }
+    }
+
+
+    .skills-section .progress-striped .progress-bar5 {  
+      /*background-color: #FCBC51; 
+      width: 100%; 
+      background-image: linear-gradient(
+            45deg, rgb(252,163,17) 25%, 
+            transparent 25%, transparent 50%, 
+            rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+            transparent 75%, transparent); */
+
+          background-color: #e09422e3;
+        width: 100%;
+        background-image: linear-gradient( 
+    45deg
+     , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+      animation: progressAnimationStrike5 6s;
+    }
+
+    @keyframes progressAnimationStrike5 {
+         from { width: 0 }
+         to   { width: 50% }
+    }
+
+    .skills-section .progress-striped .progress-bar6 {  
+      /*background-color: #FCBC51; 
+      width: 100%; 
+      background-image: linear-gradient(
+            45deg, rgb(252,163,17) 25%, 
+            transparent 25%, transparent 50%, 
+            rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+            transparent 75%, transparent); */
+
+          background-color: #e09422e3;
+        width: 100%;
+        background-image: linear-gradient( 
+    45deg
+     , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+      animation: progressAnimationStrike6 6s;
+    }
+
+    @keyframes progressAnimationStrike6 {
+         from { width: 0 }
+         to   { width: 80% }
+    }
+
+    .skills-section .progress-striped .progress-bar7 {  
+      /*background-color: #FCBC51; 
+      width: 100%; 
+      background-image: linear-gradient(
+            45deg, rgb(252,163,17) 25%, 
+            transparent 25%, transparent 50%, 
+            rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+            transparent 75%, transparent);*/
+
+          background-color: #e09422e3;
+        width: 100%;
+        background-image: linear-gradient( 
+    45deg
+     , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+      animation: progressAnimationStrike7 6s;
+    }
+
+    @keyframes progressAnimationStrike7 {
+         from { width: 0 }
+         to   { width: 60% }
+    }
+
+
+    .skills-section .progress-striped .progress-bar8 {  
+      /*background-color: #FCBC51; 
+      width: 100%; 
+      background-image: linear-gradient(
+            45deg, rgb(252,163,17) 25%, 
+            transparent 25%, transparent 50%, 
+            rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+            transparent 75%, transparent);*/
+          background-color: #e09422e3;
+        width: 100%;
+        background-image: linear-gradient( 
+    45deg
+     , rgb(154 104 29) 25%, transparent 25%, transparent 50%, rgb(195 134 44) 50%, rgb(156 101 20) 75%, transparent 75%, transparent);
+      animation: progressAnimationStrike8 6s;
+    }
+
+    @keyframes progressAnimationStrike8 {
+         from { width: 0 }
+         to   { width: 50% }
+    }
+
+
+
+    .skills-section .skill-desc-list-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .skills-section .skill-name {
+      width: 15%;
+      color: #de8c12;
+      font-family: sans-serif;
+      font-size: x-small;
+    }
+
+    .skills-section .progress-bar-container {
+      width: 100%;
+      box-shadow: inset 0 1px 2px rgb(0 0 0 / 25%), 0 1px rgb(255 255 255 / 8%);
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+    }
+
+    .skills-section .skills-list-container {
+      display: none;
+    }
+
+    .skills-section .skills-list {
+      list-style-type:none;
+      padding-left: 2%;
+    }
 }

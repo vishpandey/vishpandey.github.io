@@ -3,7 +3,7 @@
 	padding-bottom: 10%;
 }
 
-.section-heading-container {
+.education-section .section-heading-container {
 	text-align:left;
 	font-family: 'Open Sans', serif;
 	font-size: 200%;
@@ -18,7 +18,7 @@
 	z-index: 10;
 }
 
-.section-heading-container:before{
+.education-section .section-heading-container:before{
   content:"";
   width:0px;
   height:0px;
@@ -30,7 +30,7 @@
   z-index: 10;
 }
 
-.section-heading {
+.education-section .section-heading {
 	font-family: monospace;
     font-size: xxx-large;
     color: #667590;
@@ -39,11 +39,11 @@
     z-index: 10;
 }
 
-.education-table {
+.education-section .education-table {
 	padding-top: 10%;
 }
 
-.education-card-container {
+.education-section .education-card-container {
 	margin-left: 2%;
 	padding-top: 2%;
 	padding-left: 2%;
@@ -51,7 +51,7 @@
 	width: 50%;
 }
 
-.education-card {
+.education-section .education-card {
     border-top: 2px solid rgba(0,0,0,.125);
     border-bottom: 2px  solid #dad5d5;
     border-radius: 2rem;
@@ -66,24 +66,126 @@
     font-weight: 800;
 }
 
-.education-card .level {
+.education-section .education-card .level {
 	font-family: "Neuton", Georgia, "Times New Roman", serif;
 }
 
-.institute-image-container {
-	width: 100%;
+.education-section .institute-image-container {
+ 	width: 100%;
 }
 
-.education-card .institute-image-container .institute {
+.education-section .education-card .institute-image-container .institute {
 	font-family:  monospace;
 	font-weight: 800;
 	float: right;
 	width: 80%;
 }
 
-.education-card .institute-image {
+.education-section .education-card .institute-image {
 	width: 10%;
 	height: 3%;
 	border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 900px) {
+	.education-section {
+		background-color: #f8f9fa!important;
+		padding-bottom: 10%;
+	}
+
+	 .education-section .section-heading-container {
+		text-align:left;
+		font-family: 'Open Sans', serif;
+		font-size: 100%;
+		background-color:rgb(14 30 43 / 70%);
+		width:40%;
+		line-height:30px;
+		color:white;
+		margin-left:17%;
+		position:relative;
+		transform: scale3d(1.5, 1.5, 1.5);
+		letter-spacing: 2;
+		z-index: 10;
+	}
+
+	.education-section .section-heading-container:before{
+	  content:"";
+	  width:0px;
+	  height:0px;
+	  border-top:60px solid rgb(14 30 43 / 70%);
+	  border-left:60px solid transparent;
+	  position:absolute;
+	  right:100%;
+	  top:0px;
+	  z-index: 10;
+	}
+
+	.education-section .section-heading {
+		font-family: monospace;
+	    font-size: xxx-large;
+	    color: #667590;
+	    text-align: center;
+	    letter-spacing: 2px;
+	    z-index: 10;
+	}
+
+	.education-section .education-table {
+		padding-top: 10%;
+	}
+
+	.education-section .education-card-container {
+		margin-left: 2%;
+		padding-top: 2%;
+		padding-left: 2%;
+		padding-right: 2%;
+		width: 70%;
+	}
+
+	.education-section .education-card {
+	    border-top: 2px solid rgba(0,0,0,.125);
+	    border-bottom: 2px  solid #dad5d5;
+	    border-radius: 2rem;
+		background: linear-gradient(to bottom, #655b5b47, white);
+	    font-family: monospace;
+	    letter-spacing: 2px;
+	    text-align: center;
+	    word-wrap: break-word;
+	    color: rgb(28 28 31 / 80%);
+	    z-index: 10;
+	    font-weight: 800;
+	}
+
+	.education-section .education-card .level {
+		font-family: "Neuton", Georgia, "Times New Roman", serif;
+	}
+
+	.education-section .institute-image-container {
+		width: 100%;
+	}
+
+	.education-section .education-card .institute-image-container .institute {
+		font-family:  monospace;
+		font-weight: 800;
+		float: right;
+		width: 80%;
+	}
+
+	.education-section .education-card .institute-image {
+		width: 10%;
+		height: 3%;
+		border-radius: 50%;
+	}
+
+	.education-section .education-table {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.education-section .education-table tr {
+		display: flex;
+		flex-direction: column;
+	}
+
 }
 

@@ -2,18 +2,6 @@
   display: flex;
   padding-bottom: 10%;
 }
-
-@media screen and (max-width: 900px) {
-    .home-row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dp-container {
-        width: 100%;
-    }
-}
-
 .column {
   flex: 50%;
 }
@@ -69,4 +57,71 @@
 .social-media-links img {
     width: 10%;
     height:  10%;
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .home-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dp-container {
+        width: 100%;
+    }
+
+    .dp-container {
+        border-right: 1px gainsboro solid;
+        max-width: 100%;
+        font-family: monospace;
+        margin-left: 10%;
+        font-size: x-large;
+        text-align: justify;
+        letter-spacing: 2px;
+    }
+
+    .hi-div {
+        font-weight: 800px;
+    }
+
+    .dp-image-container {
+        width: 60%;
+        height: 50%;
+        background: white;
+        border-radius: 50%;
+        border: 0.1px solid #000;
+        margin-top: 20%;
+    }
+
+    .dp-image-container img {
+        height:  100%;
+        width : 100%;
+        border-radius: 50%;
+    }
+
+    .dp-name-container {
+        font-family: Sofia;
+        font-size: x-large;
+        margin-top: 10%;
+        color: #667590;
+    }
+
+
+    .about-me-container {
+        font-family: monospace;
+        margin-left: 10%;
+        line-height: 200%;
+        font-size: x-large;
+        margin-right: 10%;
+        color: #667590;
+    }
+
+
+    .social-media-links img {
+        width: 10%;
+        height:  10%;
+    }
 }

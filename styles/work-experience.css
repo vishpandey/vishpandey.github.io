@@ -2,14 +2,14 @@
 	padding-bottom: 10%;
 }
 
-.work-experience-table {
+.work-experience-section .work-experience-table {
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
 	padding-top: 10%;
 }
 
-.section-heading-container {
+.work-experience-section .section-heading-container {
 	text-align:left;
 	font-family: sans-serif;
 	font-size: 200%;
@@ -24,7 +24,7 @@
   	z-index: 10;
 }
 
-.section-heading-container:before{
+.work-experience-section .section-heading-container:before{
   content:"";
   width:0px;
   height:0px;
@@ -36,23 +36,23 @@
   z-index: 10;
 }
 
-.we-row {
+.work-experience-section .we-row {
 	background-color: white;
 }
 
-.we-row-data {
+.work-experience-section .we-row-data {
 	border-bottom: 0.1px solid lightgrey;
 }
 
-.we-container {
+.work-experience-section .we-container {
 	display: flex;
 }
 
-.we-company-logo {
+.work-experience-section .we-company-logo {
 	padding: 5%;
 }
 
-.we-detail {
+.work-experience-section .we-detail {
 	font-family: ui-monospace;
     letter-spacing: 2px;
     line-height: 80%;
@@ -60,39 +60,39 @@
     font-size: 15px;
 }
 
-.we-company-name {
+.work-experience-section .we-company-name {
 	font-color:  #7d7676fa;
 	color: #7d7676fa;
     font-weight: 700;
 
 }
 
-.we-duration {
+.work-experience-section .we-duration {
 	font-color:  #7d7676fa;
 	color: #7d7676fa;
     font-weight: 700;
     
 }
 
-.we-location {
+.work-experience-section .we-location {
 	font-color:  #7d7676fa;
 	color: #7d7676fa;
     font-weight: 700;    
 }
 
-.we-desc-link {
+.work-experience-section .we-desc-link {
 	font-color: #7d7676fa;
 	color: blue;
     font-weight: 700;
     cursor: pointer;
 }
 
-.we-desc-link:hover {
+.work-experience-section .we-desc-link:hover {
 	text-decoration: underline;
 	transform: translateY(0);
 }
 
-.we-desc {
+.work-experience-section .we-desc {
 	display: none;
 	font-family: sans-serif;
     margin-left: 10%;
@@ -104,4 +104,116 @@
 
     transition: 0.5s;
   	transform: translateY(3%);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+		.work-experience-section {
+			padding-bottom: 10%;
+		}
+
+		.work-experience-section .work-experience-table {
+			width: 100%;
+			margin-left: 0;
+			margin-right: 2%;
+			padding-top: 5%;
+		}
+
+		.work-experience-section .section-heading-container {
+			text-align:left;
+			font-family: sans-serif;
+			font-size: 100%;
+			background-color:rgb(14 30 43 / 70%);
+			width:50%;
+			line-height:30px;
+			color:white;
+			margin-left:17%;
+			position:relative;
+	  	transform: scale3d(1.5, 1.5, 1.5);
+	  	letter-spacing: 2;
+	  	z-index: 10;
+		}
+
+		.work-experience-section .section-heading-container:before{
+		  content:"";
+		  width:0px;
+		  height:0px;
+		  border-top:60px solid rgb(14 30 43 / 70%);
+		  border-left:60px solid transparent;
+		  position:absolute;
+		  right:100%;
+		  top:0px;
+		  z-index: 10;
+		}
+
+		.work-experience-section .we-row {
+			background-color: white;
+		}
+
+		.work-experience-section .we-row-data {
+			border-bottom: 0.1px solid lightgrey;
+		}
+
+		.work-experience-section .we-container {
+			display: flex;
+		}
+
+		.work-experience-section .we-company-logo {
+			padding: 5%;
+		}
+
+		.work-experience-section .we-detail {
+			font-family: ui-monospace;
+		    letter-spacing: 2px;
+		    line-height: 1;
+		    margin-top: 2%;
+		    font-size: 10px;
+		}
+
+		.work-experience-section .we-company-name {
+			font-color:  #7d7676fa;
+			color: #7d7676fa;
+		    font-weight: 700;
+
+		}
+
+		.work-experience-section .we-duration {
+			font-color:  #7d7676fa;
+			color: #7d7676fa;
+		    font-weight: 700;
+		    
+		}
+
+		.work-experience-section .we-location {
+			font-color:  #7d7676fa;
+			color: #7d7676fa;
+		    font-weight: 700;    
+		}
+
+		.work-experience-section .we-desc-link {
+			font-color: #7d7676fa;
+			color: blue;
+		    font-weight: 700;
+		    cursor: pointer;
+		}
+
+		.work-experience-section .we-desc-link:hover {
+			text-decoration: underline;
+			transform: translateY(0);
+		}
+
+		.work-experience-section .we-desc {
+			display: none;
+			font-family: sans-serif;
+		    margin-left: 10%;
+		    line-height: 200%;
+		    font-size: medium;
+		    margin-right: 10%;
+		    font-weight: 600;
+		    color: #667590;
+
+		    transition: 0.5s;
+		  	transform: translateY(3%);
+		}
 }
